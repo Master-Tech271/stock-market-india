@@ -6,11 +6,14 @@ var BSEAPI = API.BSE;
 var NSEAPI = API.NSE;
 
 var app = express();
+var cors = require("cors");
+app.use(cors());
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
-
+app.use(cors());
+app.use
 // National Stock Exchange (NSE) APIS
 
 // Get the stock market status (open/closed) - JSON
